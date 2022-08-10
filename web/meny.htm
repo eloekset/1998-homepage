@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<title>Meny</title>
+<script language="JavaScript">
+
+<!--
+
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+	if (browserName == "Netscape" && browserVer >=3) version = "n3";
+	else {
+		version = "n2";
+	}
+	
+	version = "n3"
+	if (version == "n3") {
+	toc1on = new Image();
+	toc1on.src = "Meny/1.gif";
+	toc2on = new Image();
+	toc2on.src = "Meny/2.gif";
+	toc3on = new Image();
+	toc3on.src = "Meny/3.gif";
+	toc4on = new Image();
+	toc4on.src = "Meny/4.gif";
+	toc5on = new Image();
+	toc5on.src = "Meny/5.gif";
+	toc6on = new Image();
+	toc6on.src = "Meny/6.gif";
+	toc7on = new Image();
+	toc7on.src = "Meny/7.gif";
+	toc8on = new Image();
+	toc8on.src = "Meny/8.gif";
+	toc9on = new Image();
+	toc9on.src = "Meny/9.gif";
+
+	toc1off = new Image();
+	toc1off.src = "Meny/1in.gif";
+	toc2off = new Image();
+	toc2off.src = "Meny/2in.gif";
+	toc3off = new Image();
+	toc3off.src = "Meny/3in.gif";
+	toc4off = new Image();
+	toc4off.src = "Meny/4in.gif";
+	toc5off = new Image();
+	toc5off.src = "Meny/5in.gif";
+	toc6off = new Image();
+	toc6off.src = "Meny/6in.gif";
+	toc7off = new Image();
+	toc7off.src = "Meny/7in.gif";
+	toc8off = new Image();
+	toc8off.src = "Meny/8in.gif";
+	toc9off = new Image();
+	toc9off.src = "Meny/9in.gif";
+	}
+
+function img_act(imgName) {
+	if (version == "n3") {
+	imgOn = eval(imgName + "off.src");
+	document [imgName].src = imgOn;
+	}
+}
+
+function img_inact(imgName) {
+	if (version == "n3") {
+	imgOff = eval(imgName + "on.src");
+	document [imgName].src = imgOff;
+	}
+}
+
+function klikk(page) {
+	if (imgName == "toc1") {
+		parent.hoved.location.href=page;
+	}
+}
+
+//-->
+
+</script>
+
+</head>
+
+<body bgcolor=#0063ff link=#0063ff alink=#0063ff vlink=#0063ff topmargin="0" leftmargin="0">
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td rowspan="7"><img src="Meny/left.gif" width="234" height="130"></td>
+        <td colspan="5"><img src="Meny/top.gif" width="332" height="12"></td>
+        <td rowspan="7"><img src="Meny/right.gif" width="74" height="130"></td>
+    </tr>
+    <tr>
+        <td><a href="hoved.htm" target="hoved" onMouseOver="img_act('toc1')" onMouseOut="img_inact('toc1')"><img src="Meny/1.gif" name="toc1" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="linker.htm" target="hoved" onMouseOver="img_act('toc2')" onMouseOut="img_inact('toc2')"><img src="Meny/2.gif" name="toc2" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="meg.htm" target="hoved" onMouseOver="img_act('toc3')" onMouseOut="img_inact('toc3')"><img src="Meny/3.gif" name="toc3" width="104" height="32" border=0></a></td>
+    </tr>
+    <tr>
+        <td colspan="5"><img src="Meny/width.gif" width="332" height="5"></td>
+    </tr>
+    <tr>
+        <td><a href="sopno.htm" target="hoved" onMouseOver="img_act('toc4')" onMouseOut="img_inact('toc4')"><img src="Meny/4.gif" name="toc4" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="bilder.htm" target="hoved" onMouseOver="img_act('toc5')" onMouseOut="img_inact('toc5')"><img src="Meny/5.gif" name="toc5" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="skolesider.htm" target="hoved" onMouseOver="img_act('toc6')" onMouseOut="img_inact('toc6')"><img src="Meny/6.gif" name="toc6" width="104" height="32" border=0></a></td>
+    </tr>
+    <tr>
+        <td colspan="5"><img src="Meny/width.gif" width="332" height="5"></td>
+    </tr>
+    <tr>
+        <td><a href="file:///C:/Mine dokumenter/Mine Web-områder/Min nye hjemmeside2/guestbook.html" target="hoved" onMouseOver="img_act('toc7')" onMouseOut="img_inact('toc7')"><img src="Meny/7.gif" name="toc7" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="http://home.sol.no/guestbook.cgi/guestwrite(loekseth)" target="hoved" onMouseOver="img_act('toc8')" onMouseOut="img_inact('toc8')"><img src="Meny/8.gif" name="toc8" width="104" height="32" border=0></a></td>
+        <td><img src="Meny/height.gif" width="10" height="32"></td>
+        <td><a href="mailto:eloekset@online.no" target="hoved" onMouseOver="img_act('toc9')" onMouseOut="img_inact('toc9')"><img src="Meny/9.gif" name="toc9" width="104" height="32" border=0></a></td>
+    </tr>
+    <tr>
+        <td colspan="5"><img src="Meny/bottom.gif" width="332" height="12"></td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<head><title>Linker</title>
+<script language="JavaScript">
+
+<!--
+
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+	if (browserName == "Netscape" && browserVer >=3) version = "n3";
+	else {
+		version = "n2";
+	}
+	
+	version = "n3"
+	if (version == "n3") {
+	tic1on = new Image();
+	tic1on.src = "boxman.gif";
+	
+	tic1off = new Image();
+	tic1off.src = "boxman2.gif";
+	}
+
+function img_act(imgName) {
+	if (version == "n3") {
+	imgOn = eval(imgName + "off.src");
+	document [imgName].src = imgOn;
+	}
+}
+
+function img_inact(imgName) {
+	if (version == "n3") {
+	imgOff = eval(imgName + "on.src");
+	document [imgName].src = imgOff;
+	}
+}
+
+//-->
+
+</script>
+</head>
+
+<body bgcolor="#0000ff" link="#000050" vlink="#000080" text=#ffff00 background="bakgr.jpg">
+<center><font face=arial><h2><b>Dette er linker til kuuule steder på nettet</b></h2></font>
+<img src="bar.gif" width="600" height="6"></center>
+<p>
+<table align=center width=80%>
+<tr>
+<td width="96" height="30"><a href="http://www.boxman.no" target="window" onMouseOver="img_act('tic1')" onMouseOut="img_inact('tic1')"><img src="boxman.gif" name="tic1" width=96 height=30 border=0></a></td>
+<td width=100%><b>Her kan du kjøpe CDer, Playstation-spill, DVD og video til faste lavpriser. Det eneste du betaler i frakt er NOK 20,- + porto</b></td>
+</tr>
+<tr>
+<td width=96 height=30><a href="http://srm.net/skoleside/" target="window"><img src="skole.gif" width=96 height=30 border=0></a></td>
+<td width=100%><b>Svenn sin skoleside er kanskje den beste norske...</b></td>
+</tr>
+<tr>
+<td width=96 height=30><a href="http://home.vestfoldnett.no/andrean/stiloppg/" target="window"><img src="skole.gif" width=96 height=30 border=0></a></td>
+<td width=100%><b>Andre sin skoleside er også svært bra, men du trenger rimelig høy oppløsning</b></td>
+</tr>
+<tr>
+<td width=96 height=30><a href="http://www.winamp.com/" target="window"><img src="winamp.gif" width=96 height=30 border=0></a></td>
+<td width=100%><b>Alle er vel avhengig av WinAMP?</b></td>
+</tr>
+</table>
+
+</body>
+</html>
